@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #3b2416;
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(45, 25, 10, 0.65), rgba(45, 25, 10, 0.65)),
+  url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+nav h1 {
+  font-size: 28px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 150px 8%;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline-block;
+  background: #c47f35;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about,
+.menu,
+.contact {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.about div {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+
+.card span {
+  display: inline-block;
+  margin-top: 18px;
+  font-weight: bold;
+  color: #c47f35;
+  font-size: 20px;
+}
+
+.banner {
+  background: #3b2416;
+  color: white;
+  text-align: center;
+  padding: 70px 8%;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #24150d;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 42px;
+  }
+
+  .hero-content {
+    padding-top: 100px;
+  }
+}
